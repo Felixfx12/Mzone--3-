@@ -1,0 +1,216 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #fff;
+  border-right: 1px solid #eee;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.profile h3 {
+  font-size: 1rem;
+  color: #333;
+}
+
+.profile p {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sidebar-nav a {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  background: #00796b;
+  color: #fff;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  height: 60px;
+  background-color: #00796b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  color: #fff;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.start-selling {
+  padding: 0.4rem 1rem;
+  background-color: #ffa726;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Settings Section */
+.settings {
+  flex: 1;
+  padding: 2rem;
+  background: #fff;
+}
+
+.settings h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-info {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.avatar.small {
+  width: 50px;
+  height: 50px;
+}
+
+.user-header h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.user-header p {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+  font-size: 0.9rem;
+}
+
+.form-group .edit {
+  position: absolute;
+  right: 10px;
+  top: 38px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #555;
+}
+
+.change-btn {
+  margin-top: 0.5rem;
+  background: #00796b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-start;
+  font-size: 0.9rem;
+}
+
+.badge {
+  font-size: 0.85rem;
+}
+
+
+header img {
+  height: 30px;
+}

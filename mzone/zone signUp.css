@@ -1,0 +1,91 @@
+/* General Reset and Body Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #11999e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #0c3c44;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 360px;
+    color: white;
+    text-align: center;
+}
+
+/* Heading and Subheading */
+.login-container h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.login-container h3 {
+    font-size: 18px;
+    margin: 10px 0 20px;
+    font-weight: 600;
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e5a60;
+    color: white;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #ccc;
+}
+
+/* Login Button */
+button.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    background-color: #38d39f;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button.login-btn:hover {
+    background-color: #30b389;
+}
+
+/* Signup Text */
+.signup-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #38d39f;
+    text-decoration: none;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons i {
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+}

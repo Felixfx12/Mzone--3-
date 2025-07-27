@@ -1,0 +1,128 @@
+/* General page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header bar */
+header {
+  background-color: #119DA4;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header img {
+
+  height: 30px;
+}
+
+header button {
+  background: #ffffff;
+  color: #119DA4;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Step indicator */
+.steps {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 10px;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  background-color: #F4C430;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.step.active {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Main content container */
+.container {
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Upload box */
+.upload-box {
+  border: 2px dashed #f4c430;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fffaf0;
+}
+
+.upload-box p {
+  margin: 10px 0;
+  color: #444;
+}
+
+.upload-box a {
+  color: #119DA4;
+  text-decoration: underline;
+  font-size: 0.95em;
+}
+
+/* Thumbnails */
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Next button */
+.next-btn {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  background-color: #119DA4;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}

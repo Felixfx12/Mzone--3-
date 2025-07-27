@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.profile h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.profile p {
+  font-size: 13px;
+  color: #666;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.menu a i {
+  margin-right: 10px;
+}
+
+.menu a.active,
+.menu a:hover {
+  background-color: #00a79d;
+  color: #fff;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+/* Header */
+.header {
+  background-color: #007b78;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo .green {
+  color: #00ffcc;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icons i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.start-selling {
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Content */
+.content {
+  padding: 40px 30px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: none;
+  background-color: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background-color: #007b78;
+  color: white;
+}
+
+/* Table Section */
+.table-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.ad-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ad-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.action-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  color: #007b78;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.action-icon.delete {
+  color: #e74c3c;
+}
+
+.action-icon:hover {
+  transform: scale(1.2);
+}
+
+
+header img {
+  height: 30px;
+}

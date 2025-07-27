@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.profile h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.profile p {
+  font-size: 13px;
+  color: #666;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.menu a i {
+  margin-right: 10px;
+}
+
+.menu a.active,
+.menu a:hover {
+  background-color: #00a79d;
+  color: #fff;
+}
+
+/* Main area */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background-color: #007b78;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo .green {
+  color: #00ffcc;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icons i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.start-selling {
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Content */
+.content {
+  background-color: #fafafa;
+  padding: 40px 30px;
+  flex: 1;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: none;
+  background-color: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tab.active {
+  background-color: #007b78;
+  color: white;
+}
+
+.empty-state {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.empty-state img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.empty-state p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.create-btn {
+  padding: 10px 20px;
+  background-color: #00a79d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+header img {
+  height: 30px;
+}
+
+

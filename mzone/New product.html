@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add New Product - Step 2</title>
+  <link rel="stylesheet" href="New product.css" />
+  
+</head>
+<body>
+
+  <header>
+    <img src="imge/logo.png" alt="MZone Logo" />
+    <div class="icons">
+      🔒 🛒 👤 ⚙️
+      <button class="start-selling" onclick="window.location.href='zone%20signUp.html'">Start Selling</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 class="form-title">Add New Product</h2>
+
+    <!-- Step Indicator -->
+    <div class="step-indicator">
+      <div class="step completed"><span>✓</span></div>
+      <div class="step active"><span>2</span></div>
+      <div class="step"><span>3</span></div>
+      <div class="step"><span>4</span></div>
+    </div>
+
+    <h3 class="section-title">Add Product Details</h3>
+
+    <!-- Form Section -->
+    <div class="form-group">
+      <input type="text" placeholder="Add Title Of The Product" />
+      <select>
+        <option>Add Location</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select>
+        <option>Select Brand</option>
+      </select>
+      <select>
+        <option>Select Condition</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <div class="budget-group">
+        <button>-</button>
+        <input type="text" value="$584" />
+        <button>+</button>
+      </div>
+    </div>
+
+    <textarea placeholder="Let Us Know About Product..."></textarea>
+
+    <button class="submit-btn">Next →</button>
+  </div>
+
+</body>
+</html>

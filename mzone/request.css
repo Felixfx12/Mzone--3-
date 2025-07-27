@@ -1,0 +1,279 @@
+/* Base & Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Header Bar */
+header.page-header {
+  background-color: #00796b;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header.page-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Form Title */
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Form Section */
+form.request-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+/* Form Layout */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+select, textarea, input[type="text"] {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Budget Controls */
+.budget-box {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.budget-box button {
+  background-color: #ffc107;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.budget-box span {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+/* Condition Buttons */
+.condition-options {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.condition-options button {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  background: #f3f3f3;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.condition-options button.active,
+.condition-options button:hover {
+  background-color: #ffc107;
+  color: white;
+}
+
+/* Upload Area */
+.upload-area {
+  margin: 1rem 0;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  color: #777;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.upload-area:hover {
+  background-color: #f0f0f0;
+}
+
+/* Submit */
+.submit-btn {
+  display: block;
+  width: 100%;
+  background: #008080;
+  color: white;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #006666;
+}
+
+/* App Promo Section */
+.promo-section {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  background-color: #f5f5f5;
+}
+
+.promo-text {
+  flex: 1 1 300px;
+}
+
+.promo-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.promo-text p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.promo-text .store-buttons img {
+  height: 45px;
+  margin-right: 1rem;
+}
+
+.promo-image {
+  flex: 1 1 300px;
+}
+
+.promo-image img {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Footer */
+footer.site-footer {
+  background: #0e0e0e;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+footer .footer-column h4 {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+footer .footer-column ul {
+  list-style: none;
+}
+
+footer .footer-column ul li {
+  margin-bottom: 0.4rem;
+}
+
+footer .footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer .footer-column ul li a:hover {
+  color: #fff;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .promo-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promo-text,
+  .promo-image {
+    flex: 1 1 100%;
+  }
+
+  footer.site-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .footer-column {
+    flex: 1 1 100%;
+  }
+}
+
+
+header img {
+  height: 30px;
+}

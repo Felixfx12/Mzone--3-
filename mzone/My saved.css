@@ -1,0 +1,199 @@
+/* styles.css */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #008080;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.start-selling {
+  background-color: orange;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header img {
+  height: 30px;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+  display: block;
+  margin: 12px 0;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar-nav a:hover {
+  color: #008080;
+}
+
+.content {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tab {
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #008080;
+  color: white;
+  border-color: #008080;
+}
+
+.ad-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ad-item {
+  display: flex;
+  background-color: #fafafa;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  align-items: center;
+  gap: 15px;
+}
+
+.ad-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.ad-details {
+  flex: 1;
+}
+
+.ad-details h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.ad-details p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.location {
+  font-size: 13px;
+  color: #888;
+}
+
+.ad-actions {
+  text-align: right;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #008080;
+}
+
+.chat-btn, .contact-btn {
+  display: block;
+  margin: 4px 0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #008080;
+  background-color: white;
+  color: #008080;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.chat-btn:hover, .contact-btn:hover {
+  background-color: #008080;
+  color: white;
+}

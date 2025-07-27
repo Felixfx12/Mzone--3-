@@ -1,0 +1,131 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #111;
+}
+
+/* Header */
+header {
+  background-color: #008b8b;
+  padding: 15px 20px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+/* Layout */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile .name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile .email {
+  font-size: 13px;
+  color: #888;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 5px;
+}
+
+.sidebar nav ul li.active a,
+.sidebar nav ul li a:hover {
+  background-color: #008b8b;
+  color: white;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f6f6f6;
+}
+
+.main-content h2 {
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* FAQ Section */
+.faq-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item p {
+  flex: 1;
+  color: #333;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: 1px solid #008b8b;
+  color: #008b8b;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.3s ease;
+}
+
+.faq-toggle:hover {
+  background-color: #008b8b;
+  color: #fff;
+}

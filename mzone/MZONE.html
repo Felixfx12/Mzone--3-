@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MZone Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="MZONE.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="imge/pet.png" alt="Profile" class="avatar">
+        <h3>James Bond</h3>
+        <p>jamesbond007@gmail.com</p>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="active">My adverts</a>
+        <a href="#">Feedback</a>
+        <a href="#">FAQs</a>
+        <a href="#">Setting</a>
+        <a href="#">Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <img src="imge/logo.png" alt="">
+        <div class="icons">
+          <button class="icon-btn">🔔</button>
+          <button class="icon-btn">⚙️</button>
+          <button class="icon-btn">👤</button>
+          <button class="start-selling" onclick="window.location.href='zone%20Login.html'">Start Selling</button>
+        </div>
+      </header>
+
+      <!-- Adverts Section -->
+      <section class="adverts">
+        <div class="section-header">
+          <h2>My Advert</h2>
+          <div class="tabs">
+            <button class="tab active">All</button>
+            <button class="tab">Active</button>
+            <button class="tab">Reviewing</button>
+            <button class="tab">Declined</button>
+            <button class="tab">Draft</button>
+            <button class="tab">Closed</button>
+          </div>
+        </div>
+
+        <div class="empty-state">
+          <img src="https://i.ibb.co/02z4F0h/empty-folder.png" alt="No Adverts" class="empty-img" />
+          <p>There are no adverts yet. <br>Create new one now!</p>
+          <button class="create-btn">Create Now</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

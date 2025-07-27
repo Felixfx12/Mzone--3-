@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MZone - My Advert</title>
+  <link rel="stylesheet" href="Mzone Advert.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="imge/pet.png" alt="Profile">
+        <h3>James Bond</h3>
+        <p>jamesbond007@gmail.com</p>
+      </div>
+      <nav class="menu">
+        <a href="#" class="active"><i class="fa fa-bullhorn"></i> My adverts</a>
+        <a href="#"><i class="fa fa-comment-dots"></i> Feedback</a>
+        <a href="#"><i class="fa fa-question-circle"></i> FAQ's</a>
+        <a href="#"><i class="fa fa-cog"></i> Setting</a>
+        <a href="#"><i class="fa fa-sign-out-alt"></i> Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+      <!-- Header -->
+      <header class="header">
+        <img src="imge/logo.png" alt="">
+        <div class="header-icons">
+          <i class="fa fa-bell"></i>
+          <i class="fa fa-envelope"></i>
+          <i class="fa fa-user-circle"></i>
+          <button class="start-selling" onclick="window.location.href='zone%20Login.html'">Start Selling</button>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <section class="content">
+        <h2>My Advert</h2>
+        <div class="tabs">
+          <button class="tab active">All</button>
+          <button class="tab">Active</button>
+          <button class="tab">Reviewing</button>
+          <button class="tab">Declined</button>
+          <button class="tab">Draft</button>
+          <button class="tab">Closed</button>
+        </div>
+
+        <div class="empty-state">
+          <img src="imge/woman stand.jpg" alt="No Ads" />
+          <p>There are no adverts yet.<br>Create new one now!</p>
+          <button class="create-btn">Create Now</button>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
